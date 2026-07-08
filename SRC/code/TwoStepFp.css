@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.ts2-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.ts2-page * {
+  box-sizing: border-box;
+}
+
+.ts2-left {
+  flex: 0 0 45%;
+  max-width: 680px;
+  min-width: 0;
+  display: flex;
+}
+
+.ts2-right {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+}
+
+@media (max-width: 860px) {
+  .ts2-page {
+    flex-direction: column;
+  }
+
+  .ts2-left {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .ts2-left .lpf2-container {
+    min-height: 320px;
+    padding: 40px 32px;
+  }
+}

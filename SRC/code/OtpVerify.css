@@ -1,0 +1,53 @@
+.ov-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.ov-wrapper {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.ov-left {
+  flex: 0 0 38%;
+  max-width: 620px;
+  display: flex;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.ov-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+  .ov-wrapper {
+    flex-direction: column;
+  }
+
+  .ov-left {
+    flex: none;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .ov-right {
+    padding: 20px;
+  }
+
+  .ov-left .lpv-container {
+    min-height: 280px;
+  }
+}

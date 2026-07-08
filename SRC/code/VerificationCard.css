@@ -1,0 +1,113 @@
+.verification-card {
+  width: 100%;
+  max-width: 443px;
+  height: 92px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+  gap: 16px;
+
+  background: #FFFFFF;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.verification-card.active {
+  border-color: #4F46E5;
+  background: #F8FAFF;
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.icon-container {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #EEF2FF;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h3 {
+  margin: 0;
+
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+
+  color: #111827;
+}
+
+.card-content p {
+  margin: 4px 0 0;
+
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+
+  color: #6B7280;
+}
+
+.radio-button {
+  width: 24px;
+  height: 24px;
+
+  border: 2px solid #D1D5DB;
+  border-radius: 9999px;
+  background: #FFFFFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+  box-sizing: border-box;
+
+  transition: all 0.2s ease;
+}
+
+.radio-button.selected {
+  border-color: #4F46E5;
+}
+
+.radio-button.selected::after {
+  content: "";
+
+  width: 10px;
+  height: 10px;
+
+  background: #4F46E5;
+  border-radius: 50%;
+}
